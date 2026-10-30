@@ -1,0 +1,6 @@
+requests>=2.32.0
+PyMuPDF>=1.24.0
+
+# Optional OCR support:
+pytesseract>=0.3.13
+Pillow>=10.0.0

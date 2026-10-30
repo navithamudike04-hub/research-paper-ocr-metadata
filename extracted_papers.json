@@ -1,0 +1,290 @@
+[
+  {
+    "arxiv_id": "2503.18382",
+    "title": "PP-FormulaNet: Bridging Accuracy and Efficiency in Advanced Formula Recognition",
+    "authors": [
+      "Hongen Liu",
+      "Cheng Cui",
+      "Yuning Du",
+      "Yi Liu",
+      "Gang Pan"
+    ],
+    "abstract": "Formula recognition is an important task in document intelligence. It involves converting mathematical expressions from document images into structured symbolic formats that computers can easily work with. LaTeX is the most common format used for this purpose. In this work, we present PP-FormulaNet, a state-of-the-art formula recognition model that excels in both accuracy and efficiency. To meet the diverse needs of applications, we have developed two specialized models: PP-FormulaNet-L, tailored for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a significant 6%. Conversely, PP-FormulaNet-S operates at speeds that are over 16 times faster. These advancements facilitate seamless integration of PP-FormulaNet into a broad spectrum of document processing environments that involve intricate mathematical formulas. Furthermore, we introduce a Formula Mining System, which is capable of extracting a vast amount of high-quality formula data. This system further enhances the robustness and applicability of our formula recognition model. Code and models are publicly available at PaddleOCR(https://github.com/PaddlePaddle/PaddleOCR) and PaddleX(https://github.com/PaddlePaddle/PaddleX).",
+    "publication_date": "2025-03-24",
+    "arxiv_url": "https://arxiv.org/abs/2503.18382",
+    "models": [
+      "PP-FormulaNet-L",
+      "PP-FormulaNet-S",
+      "Vary-VIT-B",
+      "PP-HGNetV2-B4",
+      "MBart Decoder",
+      "GOT2.0-OCR",
+      "UniMERNet",
+      "Pix2tex"
+    ],
+    "datasets": [
+      "UniMERNet-1M",
+      "arXiv-4M"
+    ],
+    "github_url": [
+      "https://github.com/PaddlePaddle/PaddleOCR",
+      "https://github.com/PaddlePaddle/PaddleX"
+    ],
+    "sota_results": [
+      {
+        "benchmark": "Formula-recognition evaluation (paper abstract)",
+        "metric": "Relative performance improvement",
+        "value": "6%",
+        "comparison_target": "UniMERNet; PP-FormulaNet-L",
+        "context": "Abstract-level claim. Check the original table before treating as a verified table result."
+      },
+      {
+        "benchmark": "Formula-recognition inference (paper abstract)",
+        "metric": "Speedup",
+        "value": "over 16x faster",
+        "comparison_target": "PP-FormulaNet-S versus the comparison model described by the paper",
+        "context": "Abstract-level claim; exact hardware and batch conditions matter."
+      }
+    ],
+    "pdf_pages": 13,
+    "extracted_text_characters": 41357,
+    "pdf_text_extraction": "text extracted",
+    "ocr_used": false,
+    "ocr_pages": [],
+    "ocr_notes": [],
+    "extraction_notes": [
+      "Title, authors, abstract and original submission date are retrieved from the arXiv API.",
+      "Models and datasets are seeded from paper-specific information and known terms are added only when found in extracted text.",
+      "Repository URLs and SOTA claims are curated; verify against the paper before treating them as exhaustive or independently validated.",
+      "OCR is attempted only on pages with very little extractable text and only when pytesseract, Pillow, and the Tesseract application are available."
+    ]
+  },
+  {
+    "arxiv_id": "2510.13998",
+    "title": "BitNet Distillation",
+    "authors": [
+      "Xun Wu",
+      "Shaohan Huang",
+      "Wenhui Wang",
+      "Ting Song",
+      "Li Dong",
+      "Yan Xia",
+      "Furu Wei"
+    ],
+    "abstract": "In this paper, we present BitNet Distillation (BitDistill), a lightweight pipeline that fine-tunes off-the-shelf full-precision LLMs (e.g., Qwen) into 1.58-bit precision (i.e., ternary weights {-1, 0, 1}) for specific downstream tasks, achieving strong task-specific performance with minimal computational cost. Specifically, BitDistill incorporates three key techniques: the SubLN module, as introduced in BitNet; multi-head attention distillation, based on MiniLM; and continual pre-training, which serves as a crucial warm-up step to mitigate the scalability issue of the performance gap between finetuned full-precision and 1.58-bit LLMs on specific tasks. Experimental results show that BitDistill achieves performance comparable to the full-precision counterpart models across model size, while enabling up to 10x memory savings and 2.65x faster inference on CPUs. Code is available at https://github.com/microsoft/BitNet.",
+    "publication_date": "2025-10-15",
+    "arxiv_url": "https://arxiv.org/abs/2510.13998",
+    "models": [
+      "BitDistill",
+      "BitNet",
+      "Qwen",
+      "MiniLM"
+    ],
+    "datasets": [
+      "ARC"
+    ],
+    "github_url": [
+      "https://github.com/microsoft/BitNet"
+    ],
+    "sota_results": [
+      {
+        "benchmark": "CPU inference (paper abstract)",
+        "metric": "Inference speedup",
+        "value": "2.65x faster",
+        "comparison_target": "Full-precision counterpart models",
+        "context": "Abstract-level claim; not a benchmark-specific accuracy score."
+      },
+      {
+        "benchmark": "Memory usage (paper abstract)",
+        "metric": "Memory reduction",
+        "value": "up to 10x",
+        "comparison_target": "Full-precision counterpart models",
+        "context": "Abstract-level claim; not a benchmark-specific accuracy score."
+      }
+    ],
+    "pdf_pages": 12,
+    "extracted_text_characters": 41864,
+    "pdf_text_extraction": "text extracted",
+    "ocr_used": false,
+    "ocr_pages": [],
+    "ocr_notes": [],
+    "extraction_notes": [
+      "Title, authors, abstract and original submission date are retrieved from the arXiv API.",
+      "Models and datasets are seeded from paper-specific information and known terms are added only when found in extracted text.",
+      "Repository URLs and SOTA claims are curated; verify against the paper before treating them as exhaustive or independently validated.",
+      "OCR is attempted only on pages with very little extractable text and only when pytesseract, Pillow, and the Tesseract application are available."
+    ]
+  },
+  {
+    "arxiv_id": "2607.18859",
+    "title": "PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents",
+    "authors": [
+      "Tianyue Jiang",
+      "Yanlin Wang",
+      "Xin He",
+      "Daya Guo",
+      "Jiachi Chen",
+      "Ming Wen",
+      "Ensheng Shi",
+      "Xilin Liu",
+      "Yuchi Ma",
+      "Guanbin Li"
+    ],
+    "abstract": "While Large Language Models have greatly advanced automated issue resolution, existing agent-based methods exhibit a fundamental limitation in their insufficient exploration of repair strategies. This insufficiency manifests in two key aspects. First, the exploration of multiple potential edit locations is limited. Second, the exploration of repair attempts at each location is also insufficient. To address these challenges, we present PhoenixRepair, a multi-agent framework that systematically explores multiple candidate edit locations and performs iterative reflection and refinement on patch generation, thereby expanding the search space of repair strategies. Our framework begins with multi-location sampling, optionally augmented with graph-based localization information for difficult tasks, followed by iterative reflection and refinement to generate better patches, culminating in final-round generation guided by distilled insights from all historical attempts. Experiments on SWE-bench-Verified demonstrate that PhoenixRepair achieves the largest relative improvement of 7.8\\% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0\\% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization accuracy than existing approaches. Our code is available at https://github.com/DeepSoftwareAnalytics/PhoenixRepair.",
+    "publication_date": "2026-07-21",
+    "arxiv_url": "https://arxiv.org/abs/2607.18859",
+    "models": [
+      "PhoenixRepair",
+      "DeepSeek-V3.1",
+      "MiniMax-M2.5",
+      "SWE-agent",
+      "Mini-SWE-agent",
+      "Live-SWE-agent"
+    ],
+    "datasets": [
+      "SWE-bench-Verified"
+    ],
+    "github_url": [
+      "https://github.com/DeepSoftwareAnalytics/PhoenixRepair"
+    ],
+    "sota_results": [
+      {
+        "benchmark": "SWE-bench-Verified",
+        "metric": "Resolved rate (Pass@1)",
+        "value": "76.0%",
+        "comparison_target": "Other evaluated approaches; reported with MiniMax-M2.5",
+        "context": "Claim stated in the paper abstract; benchmark setup should be checked in the paper."
+      },
+      {
+        "benchmark": "SWE-bench-Verified",
+        "metric": "Relative improvement",
+        "value": "7.8%",
+        "comparison_target": "SWE-agent under DeepSeek-V3.1",
+        "context": "Claim stated in the paper abstract."
+      }
+    ],
+    "pdf_pages": 14,
+    "extracted_text_characters": 85296,
+    "pdf_text_extraction": "text extracted",
+    "ocr_used": false,
+    "ocr_pages": [],
+    "ocr_notes": [],
+    "extraction_notes": [
+      "Title, authors, abstract and original submission date are retrieved from the arXiv API.",
+      "Models and datasets are seeded from paper-specific information and known terms are added only when found in extracted text.",
+      "Repository URLs and SOTA claims are curated; verify against the paper before treating them as exhaustive or independently validated.",
+      "OCR is attempted only on pages with very little extractable text and only when pytesseract, Pillow, and the Tesseract application are available."
+    ]
+  },
+  {
+    "arxiv_id": "2507.23370",
+    "title": "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling",
+    "authors": [
+      "Trae Research Team",
+      "Pengfei Gao",
+      "Zhao Tian",
+      "Xiangxin Meng",
+      "Xinchen Wang",
+      "Ruida Hu",
+      "Yuanan Xiao",
+      "Yizhou Liu",
+      "Zhao Zhang",
+      "Junjie Chen",
+      "Cuiyun Gao",
+      "Yun Lin",
+      "Yingfei Xiong",
+      "Chao Peng",
+      "Xia Liu"
+    ],
+    "abstract": "Software issue resolution is a critical challenge in software engineering and has garnered increasing attention in recent years. With the rapid advancement of large language models (LLMs), substantial progress has been made in addressing real-world software engineering tasks. Recent studies have introduced ensemble reasoning techniques to enhance the performance of LLM-based issue resolution. However, existing prompting-based methods still face limitations in effectively exploring large ensemble spaces and lack the capacity for repository-level understanding, both of which constrain their overall effectiveness. In this paper, we propose Trae Agent, the first agent-based ensemble reasoning approach for repository-level issue resolution. Trae Agent formulates our goal as an optimal solution search problem and addresses two key challenges, i.e., large ensemble spaces and repository-level understanding, through modular agents for generation, pruning, and selection. We conduct extensive experiments using three leading LLMs on the widely-adopted SWE-bench benchmark, comparing Trae Agent against four state-of-the-art ensemble reasoning techniques. Experimental results demonstrate that Trae Agent consistently achieves superior performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to support the research community, with all resources available at https://github.com/bytedance/trae-agent.",
+    "publication_date": "2025-07-31",
+    "arxiv_url": "https://arxiv.org/abs/2507.23370",
+    "models": [
+      "Trae Agent"
+    ],
+    "datasets": [
+      "SWE-bench",
+      "SWE-bench Verified"
+    ],
+    "github_url": [
+      "https://github.com/bytedance/trae-agent"
+    ],
+    "sota_results": [
+      {
+        "benchmark": "SWE-bench Verified",
+        "metric": "Pass@1",
+        "value": "75.20%",
+        "comparison_target": "Leaderboard approaches at the time reported by the paper",
+        "context": "Claim stated in the paper abstract; leaderboard standings can change over time."
+      },
+      {
+        "benchmark": "SWE-bench (paper evaluation)",
+        "metric": "Average improvement in Pass@1",
+        "value": "10.22%",
+        "comparison_target": "Four baseline ensemble-reasoning techniques",
+        "context": "Claim stated in the paper abstract."
+      }
+    ],
+    "pdf_pages": 23,
+    "extracted_text_characters": 79769,
+    "pdf_text_extraction": "text extracted",
+    "ocr_used": false,
+    "ocr_pages": [],
+    "ocr_notes": [],
+    "extraction_notes": [
+      "Title, authors, abstract and original submission date are retrieved from the arXiv API.",
+      "Models and datasets are seeded from paper-specific information and known terms are added only when found in extracted text.",
+      "Repository URLs and SOTA claims are curated; verify against the paper before treating them as exhaustive or independently validated.",
+      "OCR is attempted only on pages with very little extractable text and only when pytesseract, Pillow, and the Tesseract application are available."
+    ]
+  },
+  {
+    "arxiv_id": "2503.11651",
+    "title": "VGGT: Visual Geometry Grounded Transformer",
+    "authors": [
+      "Jianyuan Wang",
+      "Minghao Chen",
+      "Nikita Karaev",
+      "Andrea Vedaldi",
+      "Christian Rupprecht",
+      "David Novotny"
+    ],
+    "abstract": "We present VGGT, a feed-forward neural network that directly infers all key 3D attributes of a scene, including camera parameters, point maps, depth maps, and 3D point tracks, from one, a few, or hundreds of its views. This approach is a step forward in 3D computer vision, where models have typically been constrained to and specialized for single tasks. It is also simple and efficient, reconstructing images in under one second, and still outperforming alternatives that require post-processing with visual geometry optimization techniques. The network achieves state-of-the-art results in multiple 3D tasks, including camera parameter estimation, multi-view depth estimation, dense point cloud reconstruction, and 3D point tracking. We also show that using pretrained VGGT as a feature backbone significantly enhances downstream tasks, such as non-rigid point tracking and feed-forward novel view synthesis. Code and models are publicly available at https://github.com/facebookresearch/vggt.",
+    "publication_date": "2025-03-14",
+    "arxiv_url": "https://arxiv.org/abs/2503.11651",
+    "models": [
+      "VGGT",
+      "DINO",
+      "VGGSfM",
+      "DUSt3R",
+      "MASt3R"
+    ],
+    "datasets": [
+      "CO3D",
+      "DTU",
+      "ETH3D",
+      "RealEstate10K",
+      "ScanNet",
+      "MegaDepth",
+      "BlendedMVS",
+      "KITTI",
+      "DL3DV"
+    ],
+    "github_url": [
+      "https://github.com/facebookresearch/vggt"
+    ],
+    "sota_results": [],
+    "pdf_pages": 20,
+    "extracted_text_characters": 91438,
+    "pdf_text_extraction": "text extracted",
+    "ocr_used": false,
+    "ocr_pages": [],
+    "ocr_notes": [],
+    "extraction_notes": [
+      "Title, authors, abstract and original submission date are retrieved from the arXiv API.",
+      "Models and datasets are seeded from paper-specific information and known terms are added only when found in extracted text.",
+      "Repository URLs and SOTA claims are curated; verify against the paper before treating them as exhaustive or independently validated.",
+      "OCR is attempted only on pages with very little extractable text and only when pytesseract, Pillow, and the Tesseract application are available."
+    ]
+  }
+]
